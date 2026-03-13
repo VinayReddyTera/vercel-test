@@ -50,15 +50,6 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 /* ======================================================
-   LOGGING & OBSERVABILITY
-====================================================== */
-const morgan = require('morgan');
-const logger = require('./utilities/logger');
-
-// Record all incoming HTTP REST requests into the Winston application log file
-app.use(morgan('combined', { stream: logger.stream }));
-
-/* ======================================================
    DATA SANITIZATION & PARAMETER POLLUTION
 ====================================================== */
 const mongoSanitize = require('express-mongo-sanitize');
