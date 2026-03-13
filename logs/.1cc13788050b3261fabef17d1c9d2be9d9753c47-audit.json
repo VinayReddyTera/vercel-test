@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/Users/vinay/Desktop/express/vercel-test/logs/.1cc13788050b3261fabef17d1c9d2be9d9753c47-audit.json",
+    "files": [
+        {
+            "date": 1773408247620,
+            "name": "/Users/vinay/Desktop/express/vercel-test/logs/error-2026-03-13.log",
+            "hash": "2535cb568c37a2204afffe24153eac940293046fde11873ed863cb2456952f56"
+        }
+    ],
+    "hashType": "sha256"
+}
