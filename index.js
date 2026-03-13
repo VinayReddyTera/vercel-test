@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require("cors");
 const helmet = require('helmet');
 const path = require('path');
-
+const { connectDB } = require('./utilities/connection');
 const app = express();
 
 /* ======================================================
@@ -124,7 +124,7 @@ const port = process.env.PORT || 1204;
 async function startServerWithDB(retryCount = 5, delayMs = 3000) {
     try {
         console.log('test')
-        // await connectDB();
+        await connectDB();
         app.listen(port, () => {
             console.log(`Server listening on port ${port}`);
         });
